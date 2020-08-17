@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Movie = (props) => {
-    let stringLetters = props.name
-    if(stringLetters.length > 18){
-        stringLetters = stringLetters.substring(0, 18).concat('...')
+const Filme = (props) => {
+    let tamanhoLetras = props.name
+    if(tamanhoLetras.length > 18){
+        tamanhoLetras = tamanhoLetras.substring(0, 18).concat('...')
     }
     return(
         <div className="col s12 m6 l3">
@@ -14,11 +14,11 @@ const Movie = (props) => {
                     }
                 </div>
                 <div className="card-content" style={{}}>
-                    <p style={{ height: 10}}><a href="#" onClick={() => props.viewMovieInfo(props.movieId)}> {stringLetters} </a></p>
+                    <p style={{ height: 10}}><a href="#" className="text-blue" onClick={() => props.verFilmeInfo(props.movieId)}> {tamanhoLetras} </a></p>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Movie;
+export default Filme;

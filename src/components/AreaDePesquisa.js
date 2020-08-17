@@ -1,13 +1,13 @@
 import React from 'react';
 
-const SearchArea = (props) => {
-    return(
+const AreaDePesquisa = (props) => {
+    return (
         <div className="container">
             <div className="row">
                 <section className="col s4 offset-s4">
-                    <form action="" onSubmit={props.handleSubmit}>
+                    <form action="" onSubmit={props.lidarSubmit}>
                         <div className="input-field">
-                            <input placeholder="Search movie" type="text" onChange={props.handleChange}></input>
+                            <input placeholder="Procurar Filme" type="text" onChange={props.lidarMudança}></input>
                         </div>
                     </form>
                 </section>
@@ -16,4 +16,4 @@ const SearchArea = (props) => {
     )
 }
 
-export default SearchArea;
+export default AreaDePesquisa;

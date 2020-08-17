@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Nav = () => {
-    return(
-        <nav className="red darken-2">
+    return (
+        <nav className="blue">
             <div className="nav-wrapper container">
-                <a href="#" className="brand-logo">Movie finder</a>
+                <a href="#" className="brand-logo white-text">Top Filmes</a>
             </div>
         </nav>
     )
